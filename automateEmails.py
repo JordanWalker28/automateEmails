@@ -1,5 +1,3 @@
-import datetime
-
 def countTime(newList):
     timeList = []
     for i in newList:
@@ -18,9 +16,9 @@ def convertTime(time):
     totalSecs, sec = divmod(totalSecs, 60)
     hr, min = divmod(totalSecs, 60)
     return ("%d:%02d:%02d" % (hr, min, sec))
-    
-    
-newList = ["Test1 0 00:09:01.1078011",
+
+newList = [
+"Test1 0 00:09:01.1078011",
 "Test2 0 00:13:37.8615263",
 "Test3 0 00:11:50.7668146",
 "Test4 0 00:13:59.4735126",
@@ -30,7 +28,8 @@ newList = ["Test1 0 00:09:01.1078011",
 "Test8 0 00:14:09.3492916",
 "Test9 0 00:41:53.7395511",
 "Test10 0 00:10:21.3569702",
-"Test11 1 00:10:34.5580787"]
+"Test11 1 00:10:34.5580787"
+]
 
 Tests = []
 PassFails = []
